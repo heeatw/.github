@@ -1,0 +1,29 @@
+name: Runbook / 文件更新
+description: 請 bot 掃專案、更新 RUNBOOK、回答問題，或把知識升級到共用知識庫
+title: "[runbook] "
+labels: [runbook]
+body:
+  - type: dropdown
+    id: action
+    attributes:
+      label: 動作
+      options:
+        - 全專案掃描並更新 RUNBOOK
+        - 更新指定章節
+        - 問一個問題
+        - 升級到共用知識庫
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 內容
+      description: 要更新的章節與原因、要問的問題、或要升級的知識主題與來源
+      placeholder: 例：部署流程改成 wrangler deploy --env prod，請更新「部署與回滾」
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: 相關檔案或路徑（選填）
+      placeholder: 例：wrangler.jsonc, .github/workflows/deploy.yml
