@@ -1,0 +1,38 @@
+name: 需求 / 想法
+description: 把一個想法丟進來，kuu 會整理成規格草稿、列出待決問題，回在這個 issue
+title: "[idea] "
+labels: [idea]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 一句話說想做什麼
+      placeholder: 例：讓客服回信可以排程在上班時間才寄出
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 為什麼 / 現在的痛點
+      placeholder: 現在是怎麼做的、哪裡卡、誰會用到
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: 情境或例子（選填）
+      placeholder: 一個具體的操作流程、畫面、或輸入輸出
+  - type: dropdown
+    id: output
+    attributes:
+      label: 想要的產出
+      options:
+        - 在 issue 留言整理成規格草稿（預設）
+        - 直接寫成規格檔並開 PR（repo 要有 docs/specs 之類的慣例）
+    validations:
+      required: true
+  - type: textarea
+    id: kuu
+    attributes:
+      label: 交給 kuu（請保留這段，刪掉就不會觸發）
+      value: "@kuu 請依 .kb/kit/prompts/idea.md 處理這個想法。"
