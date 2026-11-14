@@ -1,5 +1,5 @@
 name: 需求 / 想法
-description: 把一個想法丟進來，kuu 會整理成規格草稿、列出待決問題，回在這個 issue
+description: 把一個想法丟進來，kuu 整理成規格草稿、列出待決問題。功能規劃請開在 heeatw/docs（標題加「<repo>：」）；bug 請直接在專案開 issue
 title: "[idea] "
 labels: [idea]
 body:
