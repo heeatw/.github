@@ -1,5 +1,5 @@
 name: Runbook / 文件更新
-description: runbook 或文件要更新、要問問題、要把知識升級到共用知識庫。開了 ebifu 會先留一則調查；動手用本機 /runbook-scan、/runbook-update、/kb-promote
+description: runbook 或文件要更新、或要問一個問題。留言 @ebifu 可以先討論；動手用本機 /issue N
 title: "[runbook] "
 labels: [runbook]
 body:
@@ -8,17 +8,17 @@ body:
     attributes:
       label: 動作
       options:
-        - 全專案掃描並更新 RUNBOOK
+        - 整份對齊現況
         - 更新指定章節
         - 問一個問題
-        - 升級到共用知識庫
+        - 跨專案知識寫到 heeatw/docs 的 notes/
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
       label: 內容
-      description: 要更新的章節與原因、要問的問題、或要升級的知識主題與來源
+      description: 要更新的章節與原因、要問的問題、或要寫進 notes/ 的知識主題與來源
       placeholder: 例：部署流程改成 wrangler deploy --env prod，請更新「部署與回滾」
     validations:
       required: true
