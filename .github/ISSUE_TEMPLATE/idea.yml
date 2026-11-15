@@ -1,5 +1,5 @@
 name: 需求 / 想法
-description: 把一個想法丟進來，kuu 整理成規格草稿、列出待決問題。功能規劃請開在 heeatw/docs（標題加「<repo>：」）；bug 請直接在專案開 issue
+description: 把一個想法丟進來，ebifu 整理成規格草稿、列出待決問題。功能規劃請開在 heeatw/docs（標題加「<repo>：」）；bug 請直接在專案開 issue
 title: "[idea] "
 labels: [idea]
 body:
@@ -32,7 +32,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: kuu
+    id: ebifu
     attributes:
-      label: 交給 kuu（請保留這段，刪掉就不會觸發）
-      value: "@kuu 請依 .kb/kit/prompts/idea.md 處理這個想法。"
+      label: 交給 ebifu（請保留這段，刪掉就不會觸發）
+      value: "@ebifu 請依 .kb/kit/prompts/idea.md 處理這個想法。"
