@@ -1,5 +1,5 @@
 name: 需求 / 想法
-description: 把一個想法丟進來，先在 issue 上和 ebifu 討論（留言 @ebifu），收斂後本機 /issue 動工、規劃寫進 docs/specs/
+description: 把一個想法丟進來，先在 issue 上和えびふ討論（留言 @ebifu），收斂後本機 /issue 動工、規劃寫進 docs/specs/
 title: "[idea] "
 labels: [idea]
 body:
